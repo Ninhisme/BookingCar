@@ -63,7 +63,7 @@
                                     <h6 class="mb-0">User Name</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="text" class="form-control"  value="{{$adminData->username}}" disabled/>
+                                    <input type="text" class="form-control"  value="{{$adminData->username}}" />
                                 </div>
                             </div>
 
@@ -81,7 +81,7 @@
                                     <h6 class="mb-0">Email</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="email" class="form-control" name="email" value="{{$adminData->email}}" />
+                                    <input type="email" class="form-control" name="email" disabled value="{{$adminData->email}}" />
                                 </div>
                             </div>
 

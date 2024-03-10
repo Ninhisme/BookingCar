@@ -31,7 +31,8 @@
                         
                         <form method="POST" action="{{route('update.password')}}" >
                             @csrf
-
+                            
+                            {{-- Các trường hợp ngoại lệ mk k kớp or k đúng --}}
                             @if (session('status'))
                                 <div class="alert alert-success" role="alert">
                                     {{session('status')}}
@@ -51,7 +52,7 @@
                                     <input type="password" name="old_password" class="form-control @error('old_password') is-invalid @enderror"  
                                     id="current_password"  placeholder="Old Password"                       
                                      />
-
+                                    {{-- do required yêu cầu nhập or số ký tự o Validation --}}
                                      @error('old_password')
                                     <span class="text-danger">{{$message}}</span>
                                      @enderror
