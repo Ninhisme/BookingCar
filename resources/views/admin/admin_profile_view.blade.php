@@ -108,7 +108,7 @@
                                     <h6 class="mb-0">Photo</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="file" name="photo" class="form-control" value="{{$adminData->address}}" id="image"/>
+                                    <input type="file" name="photo" class="form-control" value="{{$adminData->photo}}" id="image"/>
                                 </div>
                             </div>
 

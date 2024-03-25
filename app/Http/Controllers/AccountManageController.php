@@ -8,10 +8,16 @@ use Illuminate\Http\Request;
 class AccountManageController extends Controller
 {
 
+    public function ListUser()
+    {
+        $dataUser = User::all();
+        return view('backend.users.users_list_view', compact('dataUser'));
+    }
+
     public function EditUser($id)
     {
         $dataUser = User::find($id);
-        return view('admin.admin_edit_user_view', compact('dataUser'));
+        return view('backend.users.users_edit_view', compact('dataUser'));
     }
 
     public function StoreUser(Request $request )
@@ -36,7 +42,7 @@ class AccountManageController extends Controller
             'message' => 'Sửa thông tin User thành công!',
             'alert-type' => 'success'
         );
-        return redirect('/admin/dashboard')->with($notification);
+        return redirect('/list/user')->with($notification);
     }
 
 

@@ -95,7 +95,7 @@
                       
                       <div class="col-12">
                           <div class="d-grid">
-                             <button type="submit" class="btn btn-primary">Save Product</button>
+                             <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
                           </div>
                       </div>
                   </div> 
